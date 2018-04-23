@@ -4,7 +4,7 @@ import subprocess
 import datetime
 
 # init
-r = subprocess.check_output("clementine 2> /dev/null &", shell=True)
+subprocess.Popen(["clementine", "2>", "/dev/null", "&"], shell=True)
 r = subprocess.check_output("clementine -p", shell=True)
 r = subprocess.check_output("clementine --volume 50", shell=True)
 
